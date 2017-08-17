@@ -113,21 +113,21 @@
       <section class="search">
         <h3 class="search-title">Поиск гостиницы в Седоне</h3>
         <form action="#" method="get">
-            Дата заезда:
-            <select name="date-in">
-              <option>24 апреля 2017</option>
-            </select>
-            Дата выезда:
-            <select name="date-out">
-              <option>4 июля 2017</option>
-            </select>
-            Взрослые:
-            <table>
-            </table>
-            Дети:
-            <table>
-            </table>
-            <input type="submit" value="Найти">
+            <div class="dates-in-out">
+              Дата заезда:
+              <input type="date" name="date-in">
+              Дата выезда:
+              <input type="date" name="date-out">
+            </div>
+            <div class="half-widht">
+              <label for="grownup">Взрослые:</lable>
+              <input type="number" name="amount" id="grownup" min="1" step="1">
+              <label for="children">Дети:</lable>
+              <input type="number" name="amount" id="children" min="1" step="1">
+            </div>
+            <div class="search-button">
+              <input type="submit" value="Найти">
+          </div>
         </form>
     </section>
   </main>
