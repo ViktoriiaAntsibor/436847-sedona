@@ -1,0 +1,27 @@
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+  line-height: 21pt;
+}
+
+.visually-hidden {
+  position: absolute;
+  	overflow: hidden;
+  	clip: rect(0 0 0 0);
+  	height: 1px;
+  	width: 1px;
+  	margin: -1px;
+  	padding: 0;
+  	border: 0;
+}
+
+h2 {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 21pt;
+  text-transform: uppercase;
+}
