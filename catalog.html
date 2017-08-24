@@ -29,16 +29,16 @@
               <legend>Инфраструктура:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="pool" checked>
-                  Бассейн
+                  <input class="filter-input" type="checkbox" name="pool" id="filter-pool" checked>
+                  <label for="filter-pool">Бассейн</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="parking">
-                  Парковка
+                  <input class="filter-input" type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">Парковка</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="wi-fi">
-                  Wi-Fi
+                  <input class="filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                  <label for="filter-wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -46,23 +46,25 @@
               <legend>Тип жилья:</legend>
               <ul>
                 <li class="filter-option">
-                <input class="filter-input" type="checkbox" name="hotel" checked>
-                Гостиница
+                <input class="filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
                 </li>
                 <li class="filter-option">
-                <input class="filter-input" type="checkbox" name="motel" checked>
-                Мотель
+                <input class="filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</motel>
                 </li>
                 <li class="filter-option">
-                <input class="filter-input" type="checkbox" name="apartments" checked>
-                Апартаменты
+                <input class="filter-input" type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
               <legend>Стоимость в сутки (Р):</legend>
-              <input class="price" type="text" name="price-of" placeholder="от 0">
-              <input class="price" type="text" name="price-to" placeholder="до 3000">
+              <label for="filter-price-of"><span class="visually-hidden">Стоимость в сутки от:</span></label>
+              <input class="price" type="text" name="price-of" id="filter-price-of" placeholder="от 0">
+              <label for="filter-price-to"><span>Стоимость в сутки до:</span></label>
+              <input class="price" type="text" name="price-to" id="filter-price-to" placeholder="до 3000">
               <input class="price-roll" type="range" min="0" max="10000" step="500">
             </fieldset>
             <input type="submit" value="Показать">
@@ -76,8 +78,8 @@
               <li class="sort-item"><a href="#">По рейтингу</a></li>
             </ul>
             <p>
-              <input class="sort button-up" type="button" name="up">
-              <input class="sort button-down" type="button" name="down" checked>
+              <input class="sort button-up" type="button" name="up" value="Сортировка вверх">
+              <input class="sort button-down" type="button" name="down" value="Сортировка вниз" checked>
             </p>
           </section>
           <section class="choise-list">
@@ -145,7 +147,7 @@
 
           <p class="footer-copyright">
             <b>Website by</b><br>
-            <a class="button-copyright" href="#"><img src="img\svg-sedona\logo-htmlacademy.svg" width="115" height="41"></a>
+            <a class="button-copyright" href="#"><img src="img\svg-sedona\logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML-Академии"></a>
           </p>
         </footer>
 
