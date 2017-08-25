@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Welcome to Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheets">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -15,7 +17,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
           <li><a href="maps.html">Карта штата</a></li>
-          <li><a href="hostels.html">Гостиницы</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -29,7 +31,7 @@
         Седона - это небольшой городок в Аризоне, заслуживающий большего!
       </h1>
     </section>
-    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     <section class="reasons">
       <ul class="reasons-list">
         <li class="reason-1">
@@ -102,7 +104,7 @@
             </li>
         </ul>
       </section>
-      <section>
+      <section class="interesting">
         <h3>Заинтересовались?</h3>
         <p>
           Укажите предполагаемые даты поездки, <br>
@@ -116,6 +118,7 @@
             <div class="dates-in-out">
               <label for="filter-date-in">Дата заезда:</label>
               <input type="date" name="date-in" id="filter-date-in">
+              <br>
               <label for="filter-date-out">Дата выезда:</label>
               <input type="date" name="date-out" id="filter-date-out">
             </div>
@@ -126,19 +129,19 @@
               <input type="number" name="amount" id="children" min="1" step="1">
             </div>
             <div class="search-button">
-              <input type="submit" value="Найти">
+              <input class="search-batton" type="submit" value="Найти">
           </div>
         </form>
     </section>
   </main>
 
     <footer class="main-footer">
-      <p>#visitsedona</p>
-      <div class="footer-massengers">
+      <p class="visitsedona">#visitsedona</p>
+      <div class="footer-messengers">
         <ul class="messengers">
-          <li><a class="massengers-button" href="#">ВКонтакте</a></li>
-          <li><a class="massengers-button" href="#">Фейсбук</a></li>
-          <li><a class="massengers-button" href="#">Инстаграм</a></li>
+          <li><a class="messengers-button" href="#">ВКонтакте</a></li>
+          <li><a class="messengers-button" href="#">Фейсбук</a></li>
+          <li><a class="messengers-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
       <p class="footer-copyright">

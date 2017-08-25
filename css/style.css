@@ -1,9 +1,22 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
   color: #333333;
-  line-height: 21pt;
+  background-color: #ffffff;
+  }
+
+  .inner-page {
+    text-align: left;
+  }
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -17,11 +30,286 @@ body {
   	border: 0;
 }
 
-h2 {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 21px;
-  font-weight: bold;
+.main-navigation {
   color: #000000;
-  line-height: 21pt;
+  font-weight: 700;
+  background-color: #ffffff;
+  }
+
+.main-header ul li {
+  display: inline-block;
+}
+
+  .main-header ul {
+    list-style: none;
+  }
+
+  .main-navigation a {
+    color: #000000;
+  }
+
+.main-navigation a:hover,
+.choise-list a h2:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active,
+.choise-list a h2:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sedona-info h1 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+
+.reasons-list,
+.just-reason-list  {
+  list-style: none;
+}
+
+.reasons-list h2,
+.just-reason-list h2  {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reasons-list p,
+.just-reason-list p  {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.interesting h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.search-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;
+  padding: 20px;
+}
+
+.search-title:hover {
+  background-color: #604e43;
+}
+
+.search-title:active {
+  color: #ffffff;
+  opacity: 0.3;
+  background-color: #503e33;
+}
+
+.search label {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
   text-transform: uppercase;
+}
+
+.search input {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+.search input:hover {
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+.search input:focus {
+  background-color: #ebebeb;
+  outline: none;
+}
+
+/* catalog */
+
+.main-menu-current {
+  color: #766357;
+}
+
+.filters {
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #000000;
+  background-image: url("img/jpg-sedona/sedona-catalog/catalog-filter-background.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+/* как сделать прозрачные чекбоксы и галочки? */
+
+.filters input[type="checkbox"],
+.filters input[type="checkbox"]:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.filters input[type="checkbox"]:disabled {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.filters input[type="submit"] {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.filters input[type="submit"]:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort .sort-current {
+  color: #81b3d2;
+}
+
+.sort .sort-item {
+  color: #000000;
+  opacity: 0.3;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+}
+
+.sort .sort-item a:hover {
+  color: #81b3d2;
+}
+
+.sort .sort-item a:active {
+  color: #000000;
+  opacity: none;
+}
+
+.sort .button-up,
+.sort .button-down {
+  color: #cacaca;
+}
+
+.sort .button-up:hover,
+.sort .button-down:hover {
+  color: #242021;
+}
+
+.sort .button-up:active,
+.sort .button-down:active {
+  color: #82b3d2;
+}
+
+.choise-list ul {
+  list-style: none;
+}
+
+.choise-list h2 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+}
+
+.choise {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+.choise-item-more {
+  background-color: #81b3d2;
+}
+
+.choise-item-more:hover {
+  background-color: #669ec0;
+}
+
+.choise-item-more:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.choise-item-booking {
+  background-color: #766357;
+}
+
+.choise-item-booking:hover {
+  background-color: #604e43;
+}
+
+.choise-item-booking:active {
+  background-color: #503e33;
+  color: #857871;
+}
+
+/* footer */
+
+.main-footer .visitsedona {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+}
+
+.footer-messengers ul {
+  list-style: none;
+  text-align: center;
+}
+
+.search input[type="submit"],
+.messengers-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.search input[type="submit"]:hover,
+.messengers-button:hover {
+  background-color: #669ec0;
+}
+
+.search input[type="submit"]:active,
+.messengers-button:active {
+  background-color: #5496bd;
+  opacity: 0.3;
+}
+
+.footer-copyright {
+  text-align: right;
+  color: #000000;
 }
