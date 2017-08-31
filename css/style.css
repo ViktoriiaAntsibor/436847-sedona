@@ -14,14 +14,9 @@ body {
 .big-conteiner{
   max-width: 1200px;
   min-width: 768px;
-  min-height: 2762px;
   margin: 0 auto;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
 }
-
-  .inner-page {
-    text-align: left;
-  }
 
 a {
   text-decoration: none;
@@ -37,6 +32,9 @@ a {
   padding: 0;
   border: 0;
 }
+
+/* ----------------------- header ---------------------- */
+
 
 .main-navigation {
   color: #000000;
@@ -66,6 +64,9 @@ a {
 .main-menu {
   height: 57px;
 }
+
+/* ----------------------- main ---------------------- */
+
 
 .background-sedona-text {
   margin-bottom: 120px;
@@ -151,7 +152,7 @@ a {
 }
 
 .search label {
-  width: 113px;
+  padding-right: 20px;
   color: #000000;
   font-size: 14px;
   font-weight: 700;
@@ -159,8 +160,24 @@ a {
   text-transform: uppercase;
 }
 
-.search input {
-  width: 345px;
+.search .date-out label {
+  padding-right: 16px;
+}
+
+.search .grownup label {
+  padding-right: 40px;
+}
+
+.search .children label {
+  padding-right: 14px;
+}
+
+.search .date-in input,
+.search .date-out input,
+.search .grownup input,
+.search .children input {
+  width: 340px;
+  height: 30px;
   color: #000000;
   font-size: 14px;
   font-weight: 700;
@@ -168,6 +185,14 @@ a {
   text-transform: uppercase;
   background-color: #f2f2f2;
   outline: none;
+}
+
+.search-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  width: 460px;
+  height: 60px;
 }
 
 .search input:hover {
@@ -180,10 +205,8 @@ a {
   outline: none;
 }
 
-.half input {
-  width: 115px;
-}
 
+}
 /* ---------------------- catalog ---------------------------*/
 
 .main-menu-current {
@@ -192,7 +215,6 @@ a {
 
 .filters {
   color: #ffffff;
-  font-weight: 700;
   background-color: #000000;
   background-image: url("../img/jpg-sedona/sedona-catalog/catalog-filter-background.jpg");
   background-position: 0 0;
@@ -201,9 +223,11 @@ a {
 
 .filters ul {
   list-style: none;
+  font-weight: 400;
 }
 
 .filters fieldset {
+  font-weight: 700;
   border: none;
 }
 
@@ -236,8 +260,26 @@ a {
   background-color: #ffffff;
 }
 
-.sort ul {
+.sort b {
+  width: 10%;
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sort .word {
+  width: 10%;
+}
+
+.sort ul,
+.sort .word  {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .sort .sort-current {
@@ -297,6 +339,8 @@ a {
 }
 
 .choise-item-more {
+  width: 110px;
+  height: 27px;
   background-color: #81b3d2;
 }
 
@@ -310,6 +354,8 @@ a {
 }
 
 .choise-item-booking {
+  width: 142px;
+  height: 27px;
   background-color: #766357;
 }
 
@@ -322,7 +368,7 @@ a {
   color: #857871;
 }
 
-/* footer */
+/* ----------------------- footer ---------------------- */
 
 .main-footer .visitsedona {
   color: #000000;
@@ -339,6 +385,7 @@ a {
 
 .search input[type="submit"],
 .messengers-button {
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -365,21 +412,25 @@ a {
 html,
 body {
   min-width: 768px;
-  min-height: 1750px;
 }
 
-/* ------------------- header -------------------*/
+/* ------------------- сетка header -------------------*/
 
 .main-menu {
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .main-menu li {
   width: 20%;
+}
+
+.main-menu li:nth-child(3) {
+  margin-left: auto;
 }
 
 
@@ -393,7 +444,7 @@ body {
   margin-left: -69px;
 }
 
-/* ----------------------- main ---------------------- */
+/* ----------------------- сетка main ---------------------- */
 
 .main-wrapper {
   display: flex;
@@ -492,18 +543,42 @@ body {
 
 .search {
   position: absolute;
-  width: 568px;
-  flex-basis: auto;
   background-color: #ffffff;
   z-index: 1;
   margin-top: -840px;
   margin-left: 300px;
 }
 
-/* ----------------------- footer ---------------------- */
+.search form {
+  width: 568px;
+  height: 290px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+
+.search .grownup input,
+.search .children input {
+  width: 115px;
+}
+
+.search .grownup {
+  margin-left: 30px;
+}
+
+.search .children {
+  margin-right: 30px;
+  }
+
+
+/* ----------------------- сетка footer ---------------------- */
 
 .main-footer {
   width: 100%;
+  height: 120px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -513,4 +588,148 @@ body {
 .footer-messengers,
 .footer-copyright {
   width: 20%;
+  margin: 0 auto;
+}
+
+.messengers-button {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.footer-messengers ul {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/* ----------------------- Сетка catalog ---------------------- */
+
+.filter {
+  min-height: 217px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.filter legend {
+  margin: 0;
+  padding: 0;
+}
+
+.filter ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.infrastructure {
+  min-width: 240px;
+  margin-left: 70px;
+}
+
+
+.type-of-housing {
+  min-width: 240px;
+  margin-left: 20px;
+}
+
+.filter .price {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.sort-wrapper {
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.sort-wrapper ul {
+  width: 565px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.sort-wrapper li {
+  width: 15%;
+}
+
+.sort-button {
+  margin-left: auto;
+}
+
+.choise-list ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.choise-item {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 70px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.choise-wrapper {
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+  height: 100px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.choise-wrapper h2 {
+  margin: 0;
+}
+
+.choise-wrapper p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.rating {
+  width: 120px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.rating-text {
+  margin: 0;
+  margin-top: 48px;
+  display: block;
+  width: 110px;
+  height: 27px;
+  color: #666666;
+  background-color: #e5e5e5;
 }
