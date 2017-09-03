@@ -48,7 +48,6 @@
            </p>
          </div>
          <div class="pictures pictures-1">
-          <img src="img/jpg-sedona/sedona-index/picture-reason-1.jpg" width="800" height="400" alt="Настоящий городок">
         </div>
           <ul class="just-reason-list">
             <li class="just-reason-item">
@@ -83,7 +82,6 @@
            </p>
          </div>
          <div class="pictures pictures-2">
-          <img src="img/jpg-sedona/sedona-index/picture-reason-2.jpg" width="800" height="400" alt="Там есть мост дъявола">
         </div>
         </li>
       </ul>
@@ -91,21 +89,19 @@
         <li class="reason-item">
           <h2>Небольшая <br> площадь</h2>
           <p>- №3 -</p>
-          <p>Все достапримечательности <br> находятся очень близко
+          <p>Все достапримечательности<br> находятся очень близко
           </p>
         </li>
           <li class="reason-item">
             <h2>Красивая <br> дорога</h2>
             <p>- №4 -</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем<br>
-               не скучно!
+            <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!
             </p>
           </li>
             <li class="reason-item">
               <h2>Мало <br> туристов</h2>
               <p>- №5 -</p>
-              <p>Большинство едет в Гранд Каньон и<br>
-                 толпится там
+              <p>Большинство едет в Гранд Каньон и<br> толпится там
               </p>
             </li>
         </ul>
@@ -125,18 +121,25 @@
             <div class="date-in">
               <label for="filter-date-in">Дата заезда:</label>
               <input type="text" name="date-in" id="filter-date-in" value="24 апреля 2017">
+              <span class="icon-calendar"></span>
             </div>
             <div class="date-out">
               <label for="filter-date-out">Дата выезда:</label>
               <input type="text" name="date-out" id="filter-date-out" value="4 июля 2017">
+              <span class="icon-calendar"></span>
             </div>
             <div class="grownup">
               <label for="grownup">Взрослые:</label>
-              <input type="number" name="amount" id="grownup" min="1" step="1">
+              <button class="minus" type="button" name="button-minus">-</button>
+              <input type="text" name="amount" id="grownup" min="1" step="1" value="2">
+              <button class="plus" type="button" name="button-plus">+</button>
+
             </div>
             <div class="children">
               <label for="children">Дети:</label>
-              <input type="number" name="amount" id="children" min="1" step="1">
+              <button class="minus" type="button" name="button-minus">-</button>
+              <input type="text" name="amount" id="children" min="1" step="1" value="0">
+              <button class="plus" type="button" name="button-plus">+</button>
             </div>
               <input class="search-button" type="submit" value="Найти">
         </form>
@@ -164,7 +167,7 @@
       </div>
       <p class="footer-copyright">
         <span>Website by</span>
-        <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML-Академии"></a>
+        <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML-Академии"></a>
       </p>
     </footer>
   </div>
