@@ -1,6 +1,10 @@
+/* Put your CSS code in the left column, instead of example, to put or remove unnecessary prefixes. */
+
 body {
   margin: 0;
   padding: 0;
+  padding-left: 6%;
+  padding-right: 6%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -16,7 +20,8 @@ body {
   max-width: 1200px;
   min-width: 768px;
   margin: 0 auto;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 a {
@@ -25,7 +30,7 @@ a {
 
 .visually-hidden {
   position: absolute;
-  overflow: hidden;
+  overflow: hidden;f
   clip: rect(0 0 0 0);
   height: 1px;
   width: 1px;
@@ -44,7 +49,9 @@ a {
 .main-logo {
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .main-navigation {
@@ -77,9 +84,15 @@ a {
   width: 100%;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-menu li {
@@ -93,8 +106,13 @@ a {
 /* ----------------------- main ---------------------- */
 
 .main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .background-sedona-text {
@@ -109,8 +127,13 @@ a {
   url("../img/jpg-sedona/sedona-index/background-welcome.jpg");
   background-position: bottom, center;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
- flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .sedona-info h1 {
@@ -133,10 +156,17 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .reasons-list p,
@@ -145,15 +175,26 @@ a {
   line-height: 21px;
 }
 
+.formght {
+  height:78px;
+}
+
 .reason-1,
 .reason-2 {
   width: 100%;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .reason-text {
@@ -184,15 +225,22 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  order: -1;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 
 .just-reason-list {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -205,15 +253,27 @@ a {
 }
 
 .just-reason-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.just-reason-item img {
-  order: -1;
+.test {
+  height: 76px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
   margin-bottom: 30px;
+
 }
 
 .just-reason-item p {
@@ -238,8 +298,11 @@ a {
   padding-top: 47px;
   padding-bottom: 60px;
   padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #eeeeee;
 }
 
@@ -273,21 +336,30 @@ a {
 .search {
   position: absolute;
   background-color: #ffffff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   z-index: 1;
   left: 50%;
   top: -14px;
-  transform: translate(-50%,50%);
+  -webkit-transform: translate(-50%,50%);
+      -ms-transform: translate(-50%,50%);
+          transform: translate(-50%,50%);
 
 }
 
 .search form {
   width: 568px;
   height: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 50px;
   padding-bottom: 55px;
 }
@@ -373,9 +445,15 @@ a {
 .grownup,
 .children {
   width: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .grownup {
@@ -433,11 +511,21 @@ a {
   position: absolute;
   width: 21px;
   height: 22px;
-  background-image: url("../img/svg-sedona/calendar.svg");
-  background-repeat: no-repeat;
   left: 425px;
   top: 4px;
+  fill: #a9a9a9;
 }
+
+.date-in input + .icon-calendar:hover,
+.date-out input + .icon-calendar:hover {
+  fill: #000000;
+}
+
+.date-in input + .icon-calendar:active,
+.date-out input + .icon-calendar:active {
+  fill: #81b3d2;
+}
+
 
 
 
@@ -480,10 +568,17 @@ a {
   min-height: 217px;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .filter fieldset {
@@ -507,10 +602,19 @@ a {
   margin: 0;
   margin-top: 70px;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .filter-option {
@@ -569,9 +673,14 @@ a {
   width: 320px;
   min-height: 36px;
   height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .full-price ul::after{
@@ -637,17 +746,29 @@ a {
 
 .sort-wrapper {
   height: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border-bottom: 2px solid #e5e5e5;
 }
 
 .sort-wrapper ul {
   width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
   font-size: 12px;
   line-height: 18px;
@@ -675,7 +796,7 @@ a {
   color: #81b3d2;
 }
 
-.sort .sort-item {
+.sort .sort-item a {
   color: #cacaca;
   border-bottom: 1px dashed rgba(129, 179, 210, 1);
 }
@@ -703,24 +824,34 @@ a {
   fill: #cacaca;
 }
 
+
+
 .button-up:hover,
 .button-down:hover {
-  fill:"#242021";
+  fill: #242021;
 }
 
+.button-current,
 .button-up:active,
 .button-down:active {
-  color: #82b3d2;
+  fill: #82b3d2;
 }
 
 .choise-list ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .choise-list h2 {
@@ -742,11 +873,17 @@ a {
 }
 
 .choise-item {
-  width: 100%;
+  max-width: 100%;
   height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 70px;
   border-bottom: 2px solid #e5e5e5;
 }
@@ -787,11 +924,21 @@ a {
   padding: 0;
   height: 100px;
   max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .choise-wrapper h2 {
@@ -799,7 +946,9 @@ a {
 }
 
 .choise-wrapper p {
+  text-align: left;
   width: 70px;
+  padding: 0;
   padding-top: 5px;
   padding-bottom: 5px;
   margin: 0;
@@ -809,17 +958,30 @@ a {
   padding: 0;
   width: 258px;
   height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .rating {
   width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: auto;
   margin-right: 70px;
 }
@@ -839,15 +1001,21 @@ a {
 .main-footer {
   width: 100%;
   height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .visitsedona,
 .footer-messengers,
 .footer-copyright {
   width: 20%;
+  vertical-align: middle;
   margin: 0 auto;
 }
 
@@ -860,10 +1028,15 @@ a {
 }
 
 .footer-messengers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 150px;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
   list-style: none;
   text-align: center;
@@ -871,9 +1044,15 @@ a {
 
 .messengers-button {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 48px;
   height: 48px;
   background-color: #81b3d2;
@@ -884,6 +1063,7 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
+  fill: #ffffff;
 }
 
 .search input[type="submit"]:hover,
@@ -894,10 +1074,32 @@ a {
 .search input[type="submit"]:active,
 .messengers-button:active {
   background-color: #5496bd;
+  fill: #88b6d1;
   color: #88b6d1;
 }
 
 .footer-copyright {
-  text-align: right;
-  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-copyright svg {
+  padding-left: 5px;
+  width: 115px;
+  fill: #000000;
+}
+
+.button-copyright svg:hover {
+  fill: #88b7d4;
+}
+
+.button-copyright svg:active {
+  fill: #bdbbbc;
 }
