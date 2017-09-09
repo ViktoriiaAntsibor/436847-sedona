@@ -26,7 +26,7 @@ body {
 }
 
 .inner-page .big-container {
-  padding-bottom: 120px;
+  padding-bottom: 150px;
   box-shadow: 0 -5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -133,6 +133,7 @@ a {
   background-image:
   url("../img/png-sedona/white-book.png"),
   url("../img/jpg-sedona/sedona-index/background-welcome.jpg");
+  background-color: #81b3d2;
   background-position: bottom, center;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -223,6 +224,7 @@ a {
 
 .pictures-1 {
   background-image: url("../img/jpg-sedona/sedona-index/picture-reason-1.jpg");
+  background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -231,6 +233,7 @@ a {
 .pictures-2 {
   background-image: url("../img/jpg-sedona/sedona-index/picture-reason-2.jpg");
   background-repeat: no-repeat;
+  background-color: #81b3d2;
   background-position: 0 0;
   background-size: cover;
   -webkit-box-ordinal-group: 0;
@@ -347,7 +350,7 @@ a {
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   z-index: 1;
   left: 50%;
-  top: 225px;
+  top: 223px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -355,7 +358,6 @@ a {
 }
 
 .search form {
-  width: 458px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,9 +368,9 @@ a {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      padding: 50px;
-
-  margin: auto;
+  box-sizing: border-box;
+  width: 458px;
+  margin: 50px;
 }
 
 .search div + div {
@@ -379,6 +381,7 @@ a {
 }
 
 .search-checkbox {
+  display: none;
   position: absolute;
   top: -40px;
 }
@@ -388,10 +391,8 @@ a {
 }
 
 .search-title {
-  min-width: 458px;
+  padding: 30px 134.22px;
   display: block;
-  margin: 0;
-  padding: 30px;
   margin: 0;
   background-color: #766357;
 }
@@ -425,29 +426,36 @@ a {
 
 .date-in,
 .date-out {
+  display: inline-block;
   position: relative;
   width: 458px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+.date-in label,
+.date-out label {
+  padding-top: 4px;
+  float: left;
+}
+
+.date-in input,
+.date-out input {
+  float: right;
 }
 
 .grownup {
-  width: 238px;
+  width: 229px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .children {
-  width: 180px;
+  width: 190px;
+  padding-left: 39px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 40px;
 }
-
-
 
 .search .date-in input,
 .search .date-out input,
@@ -459,6 +467,7 @@ a {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
+  padding-left: 10px;
   text-transform: uppercase;
   background-color: #f2f2f2;
   outline: none;
@@ -527,7 +536,6 @@ a {
   position: absolute;
   width: 21px;
   height: 22px;
-  left: 425px;
   top: 5px;
   left: 430px;
   fill: #a9a9a9;
@@ -551,7 +559,7 @@ a {
 
 .filters {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #81b3d2;
   background-image: url("../img/jpg-sedona/sedona-catalog/catalog-filter-background.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -604,6 +612,7 @@ a {
 
 .filter fieldset:last-child {
   max-width: 48%;
+  width: auto;
   float: right;
 }
 
@@ -648,6 +657,10 @@ a {
 
 .filter-option label {
   cursor: pointer;
+}
+
+.filter-option input[type="checkbox"] {
+  display: none;
 }
 
 .filter-option input[type="checkbox"] + label span {
@@ -967,7 +980,7 @@ a {
 
 
 .choise-wrapper-1 {
-  min-width: 283px;
+  min-width: 290px;
   height: 60px;
   padding: 0;
   margin: 0;
