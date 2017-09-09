@@ -344,6 +344,7 @@ a {
 }
 
 .search {
+  width: 558px;
   position: absolute;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -391,7 +392,7 @@ a {
 }
 
 .search-title {
-  padding: 30px 134.22px;
+  padding: 30px 30px;
   display: block;
   margin: 0;
   background-color: #766357;
@@ -896,11 +897,10 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   border: none;
-  outline: none;
 }
 
 .choise-item {
-  max-width: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -917,9 +917,7 @@ a {
 }
 
 .choise-item-more {
-  padding: 0 15px;
-
-  width: 100%;
+  width: 120px;
   padding-top: 3px;
   padding-bottom: 3px;
   background-color: #81b3d2;
@@ -935,8 +933,7 @@ a {
 }
 
 .choise-item-booking {
-  padding: 0 15px;
-  width: 100%;
+  width: 157px;
   padding-top: 3px;
   padding-bottom: 3px;
   background-color: #766357;
@@ -980,7 +977,7 @@ a {
 
 
 .choise-wrapper-1 {
-  min-width: 290px;
+  width: 287px;
   height: 60px;
   padding: 0;
   margin: 0;
@@ -994,7 +991,7 @@ a {
           flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: center;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
