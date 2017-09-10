@@ -27,7 +27,7 @@ body {
 }
 
 .inner-page .big-container {
-  padding-bottom: 150px;
+  padding-bottom: 120px;
   -webkit-box-shadow: 0 -5px 10px 2px rgba(0, 0, 0, 0.5);
           box-shadow: 0 -5px 10px 2px rgba(0, 0, 0, 0.5);
 }
@@ -218,6 +218,10 @@ a {
   color: #ffffff;
 }
 
+.reason-text p {
+  margin-bottom: 20px;
+}
+
 .reason-text h2 {
   margin-top: 0;
 }
@@ -264,7 +268,7 @@ a {
   padding: 0;
   list-style: none;
   padding-top: 60px;
-  padding-bottom: 70px;
+  padding-bottom: 85px;
 }
 
 .just-reason-list li {
@@ -302,7 +306,7 @@ a {
 .reason-item-list h2,
 .just-reason-list h2  {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -345,7 +349,7 @@ a {
 }
 
 .interesting h3 {
-  margin-top: 43px;
+  margin-top: 53px;
   margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
@@ -355,7 +359,7 @@ a {
 
 .interesting p {
   margin-top: 0;
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 }
 
 .search {
@@ -366,7 +370,7 @@ a {
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   z-index: 1;
   left: 50%;
-  top: 184px;
+  top: 213px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -620,7 +624,7 @@ a {
 .filter {
   padding-left: 6%;
   padding-right: 6%;
-  min-height: 217px;
+  min-height: 210px;
 }
 
 .filter::after {
@@ -674,7 +678,7 @@ a {
 
 .infrastructure li + li,
 .type-of-housing li + li {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .filter-option {
@@ -729,6 +733,7 @@ a {
   width: 320px;
   min-height: 36px;
   height: 36px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -945,7 +950,7 @@ a {
 }
 
 .choise-item-more {
-  width: 120px;
+  width: 110px;
   padding-top: 3px;
   padding-bottom: 3px;
   background-color: #81b3d2;
@@ -961,7 +966,7 @@ a {
 }
 
 .choise-item-booking {
-  width: 157px;
+  width: 142px;
   padding-top: 3px;
   padding-bottom: 3px;
   background-color: #766357;
@@ -1005,7 +1010,7 @@ a {
 
 
 .choise-wrapper-1 {
-  width: 287px;
+  width: 267px;
   height: 60px;
   padding: 0;
   margin: 0;
@@ -1079,7 +1084,7 @@ a {
 .footer-copyright {
   width: 20%;
   vertical-align: middle;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .main-footer .visitsedona {
@@ -1087,7 +1092,7 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  text-align: left;
+  text-align: center;
 }
 
 .footer-messengers ul {
@@ -1103,6 +1108,7 @@ a {
   margin: 0 auto;
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 
 .messengers-button {
@@ -1155,7 +1161,7 @@ a {
 
 .footer-copyright svg {
   padding-left: 5px;
-  width: 115px;
+  width: 105px;
   fill: #000000;
 }
 
