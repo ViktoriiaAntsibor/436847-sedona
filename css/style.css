@@ -12,11 +12,6 @@ body {
   min-width: 768px;
 }
 
-.inner-page {
-  padding-left: 6%;
-  padding-right: 6%;
-}
-
 .big-container {
   position: relative;
   max-width: 1200px;
