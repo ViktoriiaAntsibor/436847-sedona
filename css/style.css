@@ -185,6 +185,7 @@ a {
 
 .reasons-list p,
 .just-reason-list p  {
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
 }
@@ -310,8 +311,8 @@ a {
   width: 100%;
   list-style: none;
   margin: 0;
-  padding-top: 47px;
-  padding-bottom: 60px;
+  padding-top: 37px;
+  padding-bottom: 40px;
   padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,6 +327,11 @@ a {
   text-align: center;
 }
 
+.reason-item p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 
 .search-wrapper {
   position: relative;
@@ -336,8 +342,8 @@ a {
 }
 
 .interesting h3 {
-  margin-top: 53px;
-  margin-bottom: 30px;
+  margin-top: 43px;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -345,7 +351,7 @@ a {
 }
 
 .interesting p {
-  margin-bottom: 140px;
+  margin-bottom: 120px;
 }
 
 .search {
@@ -356,7 +362,7 @@ a {
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   z-index: 1;
   left: 50%;
-  top: 223px;
+  top: 188px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
